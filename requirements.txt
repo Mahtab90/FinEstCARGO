@@ -1,0 +1,21 @@
+pandas>=1.4
+numpy>=1.23
+pyspark==3.2.1
+dask[complete]==2023.3.1
+xarray==2023.5.0
+netCDF4
+rasterio
+scikit-learn>=1.0
+mlxtend>=0.19.0
+pyyaml
+joblib
+h5py
+geopandas
+shapely
+pyproj
+boto3
+awscli
+pyarrow
+fastparquet
+pyyaml
+mdlp-discretization==0.0.6      # entropy-based MDLP (if used), otherwise see discretize_entropy.py
