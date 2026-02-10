@@ -1,0 +1,19 @@
+# Spark configuration tuned for 500GB experiments (example)
+spark:
+  master: yarn
+  deploy-mode: cluster
+  appName: CARGO-ARM
+  driver:
+    memory: 32G
+    cores: 4
+  executor:
+    instances: 50                # tune with available capacity
+    cores: 8
+    memory: 64G
+  spark_conf:
+    spark.serializer: org.apache.spark.serializer.KryoSerializer
+    spark.sql.shuffle.partitions: 2000
+    spark.default.parallelism: 2000
+    spark.executor.memoryOverhead: 8G
+    spark.rpc.message.maxSize: 512
+    spark.driver.maxResultSize: 8G
